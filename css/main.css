@@ -30,7 +30,6 @@
       --border-radius: 8px;
   }
   
-  
 /* Reset */
 * {
     margin: 0;
@@ -99,4 +98,83 @@
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
     padding: var(--spacing-small) var(--spacing-medium);
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: var(--color-primary);
+    padding: var(--spacing-large) var(--spacing-medium);
+    text-align: left;
+    margin: 0;  /* Remove any margin that might cause white bars */
+    width: 100%;  /* Ensure full-width background */
+}
+
+.welcome-text {
+    font-family: var(--font-h3);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-small);
+}
+
+.brand-name {
+    font-family: var(--font-h1);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-small);
+}
+
+.description {
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    color: var(--color-secondary);
+    margin: var(--spacing-small) 0;
+    line-height: 1.5;
+    max-width: 80%; /* Limit width to create a natural wrap */
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+/* Button Styles */
+.btn {
+    font-family: var(--font-h3);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    margin: var(--spacing-small) 0;
+    transition: all 0.3s ease;
+    width: 200px; /* Make both buttons the same width */
+    text-align: center;
+}
+
+/* Explore Button */
+.explore-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    border: none;
+}
+
+.explore-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary); /* Add black border on hover */
+}
+
+/* Contact Button */
+.contact-btn {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+.contact-btn:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
 }
