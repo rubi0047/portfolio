@@ -20,4 +20,82 @@
     /* Font Weights */
     --font-weight-bold: 700;
     --font-weight-regular: 400;
-  }  
+  
+      /* Spacing */
+      --spacing-small: 0.5rem;
+      --spacing-medium: 1rem;
+      --spacing-large: 2rem;
+  
+      /* Border Radius */
+      --border-radius: 8px;
+  }
+  
+  
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Container */
+.nav-container {
+    width: 100%;
+}
+
+/* Top Black Section */
+.nav-top {
+    background-color: var(--color-secondary);
+}
+
+.menu-text {
+    font-family: var(--font-h2);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-accent);
+}
+
+/* Logo Styling */
+.logo-container {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Navigation Links */
+.nav-bottom {
+    background-color: var(--color-primary);
+    padding: var(--spacing-large) 0 var(--spacing-medium);
+}
+
+.nav-link {
+    font-family: var(--font-h3);
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-secondary);
+    padding: var(--spacing-small) var(--spacing-medium);
+    text-decoration: none;
+    margin: 0.2rem 0;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Active Link Styling */
+.nav-link.active {
+    font-weight: var(--font-weight-bold);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-small) var(--spacing-medium);
+}
