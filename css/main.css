@@ -178,3 +178,42 @@
     background-color: var(--color-secondary);
     color: var(--color-accent);
 }
+
+/* Profile Section */
+.profile-section {
+    position: relative;
+    background-color: var(--color-primary);
+    padding: var(--spacing-large) 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Align bottom of the image flush with section */
+    height: 45vh; /* Reduced height for less whitespace */
+    overflow: hidden;
+}
+
+/* See-through Shape */
+.shape-bg {
+    position: absolute;
+    width: 100%; /* Increase width to make it longer */
+    height: 80%; /* Reduce height to keep it stretched */
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker, see-through */
+    transform: rotate(135deg); /* Maintain the angled look */
+    top: 18%;
+    right: -25%;
+    border-radius: 50px;
+    z-index: 1;
+}
+
+/* Profile Image */
+.profile-image-container {
+    position: relative;
+    z-index: 2; /* Ensure it sits above the shape */
+}
+
+.profile-image {
+    width: 920px;
+    max-width: 920px;
+    height: auto;
+    margin-bottom: -35px;
+    margin-right: 35px;
+}
