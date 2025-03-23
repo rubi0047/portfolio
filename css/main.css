@@ -88,8 +88,9 @@
     margin: 0.2rem 0;
 }
 
-.nav-link:hover {
-    text-decoration: underline;
+.nav-link:hover, .nav-link:focus {
+    color: var(--color-accent); /* White */
+    text-decoration: none; /* Removes underline */
 }
 
 /* Active Link Styling */
