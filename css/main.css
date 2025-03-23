@@ -187,7 +187,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Align bottom of the image flush with section */
-    height: 45vh; /* Reduced height for less whitespace */
+    height: 41vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
@@ -214,6 +214,5 @@
     width: 920px;
     max-width: 920px;
     height: auto;
-    margin-bottom: -35px;
-    margin-right: 35px;
+    margin: 0 35px -35px 0;
 }
