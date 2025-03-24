@@ -180,6 +180,22 @@
 }
 
 /* Profile Section */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shape-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .profile-section {
     position: relative;
     background-color: var(--color-primary);
@@ -187,32 +203,31 @@
     display: flex;
     justify-content: center;
     align-items: flex-end; /* Align bottom of the image flush with section */
-    height: 41vh; /* Reduced height for less whitespace */
+    height: 65vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
 /* See-through Shape */
-.shape-bg {
+/* .shape-bg {
     position: absolute;
-    width: 100%; /* Increase width to make it longer */
-    height: 80%; /* Reduce height to keep it stretched */
-    background-color: rgba(0, 0, 0, 0.1); /* Slightly darker, see-through */
-    transform: rotate(135deg); /* Maintain the angled look */
-    top: 18%;
-    right: -25%;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: rotate(135deg);
+    top: 40%;
+    right: 5%;
     border-radius: 50px;
     z-index: 1;
-}
+} */
 
 /* Profile Image */
 .profile-image-container {
     position: relative;
-    z-index: 2; /* Ensure it sits above the shape */
+    /* z-index: 2; */
 }
 
 .profile-image {
-    width: 920px;
-    max-width: 920px;
-    height: auto;
+    height: 65vh;
+    width: auto;
     margin: 0 35px -35px 0;
 }
