@@ -94,7 +94,7 @@
 }
 
 .profile-image {
-    height: 48vh;
+    height: 45vh;
     width: auto;
-    margin: 0 0 -65px 80px;
+    margin-left: 82px;
 }
