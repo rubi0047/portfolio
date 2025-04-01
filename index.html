@@ -19,67 +19,83 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header class="nav-container">
+    <header class="nav-container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
         <!-- Top Black Section -->
         <div class="nav-top text-center py-2">
-            <h2 class="menu-text">Menu</h2>
+            <h2 class="menu-text" itemprop="headline">Menu</h2>
         </div>
     
         <!-- Logo and Navigation Links -->
         <div class="nav-bottom d-flex flex-column align-items-center position-relative">
             <!-- Logo -->
-            <div class="logo-container">
-                <img src="images/sam-logo.png" alt="Sam Logo" class="logo">
+            <div class="logo-container" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <img src="images/sam-logo.png" alt="Rubinnovate Logo" class="logo" itemprop="logo">
             </div>
     
             <!-- Navigation Links -->
-            <nav class="nav flex-column text-center mt-3">
-                <a href="index.html" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About</a>
-                <a href="portfolio.html" class="nav-link">Portfolio</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+            <nav class="nav flex-column text-center mt-3" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="Primary">
+                <a href="index.html" class="nav-link active" itemprop="url" aria-current="page">Home</a>
+                <a href="about.html" class="nav-link" itemprop="url">About</a>
+                <a href="portfolio.html" class="nav-link" itemprop="url">Portfolio</a>
+                <a href="contact.html" class="nav-link" itemprop="url">Contact</a>
             </nav>
         </div>
     </header>
 
-    <section class="welcome-section text-start py-4 px-3">
-        <h3 class="welcome-text">Welcome to</h3>
-        <h1 class="brand-name">Rubinnovate</h1>
-        <p class="description">
-            We specialize in creating impactful visual content tailored to meet your business needs.
-        </p>        
-    
-        <!-- Buttons -->
-        <div class="button-group mt-3">
-            <a href="portfolio.html" class="btn explore-btn">Explore</a>
-            <a href="contact.html" class="btn contact-btn">Contact Me</a>
-          </div>          
-    </section>
-    
-    <section class="profile-section text-center">
-        <div class="profile-image-container">
-            <img src="images/s-profile-1.png" alt="Profile Image" class="profile-image">
-        </div>
-    </section>
+    <!-- Main Content -->
+    <main itemscope itemtype="https://schema.org/WebPageElement" role="main">
 
-    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3">
-        <p class="footer-text mb-0">©Rubinnovate_2025</p>
-      
-        <div class="social-icons d-flex gap-2">
-          <a href="https://www.instagram.com/samraphone/" target="_blank" class="icon-circle" aria-label="Instagram">
-            <img src="images/instagram.svg" alt="Instagram" class="social-icon">
-          </a>
-          <a href="https://www.messenger.com/" target="_blank" class="icon-circle" aria-label="Messenger">
-            <img src="images/messenger.svg" alt="Messenger" class="social-icon">
-          </a>
-          <a href="https://www.linkedin.com/in/samrubinoff/" target="_blank" class="icon-circle" aria-label="LinkedIn">
-            <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
-          </a>
-          <a href="https://www.youtube.com/@ksamrubinoff" target="_blank" class="icon-circle" aria-label="YouTube">
-            <img src="images/youtube.svg" alt="YouTube" class="social-icon">
-          </a>
+        <!-- Welcome Section -->
+        <section class="welcome-section text-start py-4 px-3" itemscope itemtype="https://schema.org/WebPage">
+            <meta itemprop="name" content="Rubinnovate Homepage">
+            <h3 class="welcome-text" itemprop="alternateName">Welcome to</h3>
+            <h1 class="brand-name" itemprop="headline">Rubinnovate</h1>
+            <p class="description" itemprop="description">
+                We specialize in creating impactful visual content tailored to meet your business needs.
+            </p>
+    
+            <!-- Buttons -->
+            <div class="button-group mt-3">
+                <a href="portfolio.html" class="btn explore-btn" itemprop="relatedLink" aria-label="Explore Portfolio">Explore</a>
+                <a href="contact.html" class="btn contact-btn" itemprop="relatedLink" aria-label="Contact Rubinnovate">Contact Me</a>
+            </div>
+        </section>
+    
+        <!-- Profile Section -->
+        <section class="profile-section text-center" itemscope itemtype="https://schema.org/Person" aria-label="Profile">
+            <div class="profile-image-container">
+                <img src="images/s-profile-1.png" alt="Profile Image" class="profile-image" itemprop="image">
+            </div>
+        </section>
+    
+    </main>
+   
+    <!-- Footer Section -->    
+    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+        <!-- Copyright -->
+        <p class="footer-text mb-0" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">&copy;Rubinnovate_2025</p>
+
+        <!-- Social Media Links -->
+        <div class="social-icons d-flex gap-2" itemscope itemtype="https://schema.org/Organization" itemprop="publisher" aria-label="Rubinnovate social media links">
+            <meta itemprop="name" content="Rubinnovate">
+
+            <a href="https://www.instagram.com/samraphone/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on Instagram">
+                <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.messenger.com/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on Messenger">
+                <img src="images/messenger.svg" alt="Messenger" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/samrubinoff/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on LinkedIn">
+                <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.youtube.com/@ksamrubinoff" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on YouTube">
+                <img src="images/youtube.svg" alt="YouTube" class="social-icon">
+            </a>
         </div>
-      </footer>     
+
+    </footer>
+
     
     <!-- Bootstrap JS (for responsive components) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
