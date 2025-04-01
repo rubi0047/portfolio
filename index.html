@@ -46,16 +46,18 @@
     <main itemscope itemtype="https://schema.org/WebPageElement" role="main">
 
         <!-- Welcome Section -->
-        <section class="welcome-section text-start py-4 px-3" itemscope itemtype="https://schema.org/WebPage">
+        <section class="welcome-section text-start py-4 px-3 d-flex flex-column" itemscope itemtype="https://schema.org/WebPage">
             <meta itemprop="name" content="Rubinnovate Homepage">
-            <h3 class="welcome-text" itemprop="alternateName">Welcome to</h3>
-            <h1 class="brand-name" itemprop="headline">Rubinnovate</h1>
-            <p class="description" itemprop="description">
+    
+            <!-- Corrected heading levels and visual order -->
+            <h1 class="brand-name order-2" itemprop="headline">Rubinnovate</h1>
+            <h2 class="welcome-text order-1 lead" itemprop="alternateName">Welcome to</h2>
+            <p class="description order-3" itemprop="description">
                 We specialize in creating impactful visual content tailored to meet your business needs.
             </p>
     
             <!-- Buttons -->
-            <div class="button-group mt-3">
+            <div class="button-group mt-3 order-4">
                 <a href="portfolio.html" class="btn explore-btn" itemprop="relatedLink" aria-label="Explore Portfolio">Explore</a>
                 <a href="contact.html" class="btn contact-btn" itemprop="relatedLink" aria-label="Contact Rubinnovate">Contact Me</a>
             </div>
@@ -69,6 +71,7 @@
         </section>
     
     </main>
+    
    
     <!-- Footer Section -->    
     <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo">
