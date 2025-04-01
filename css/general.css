@@ -21,13 +21,13 @@
     --font-weight-bold: 700;
     --font-weight-regular: 400;
   
-      /* Spacing */
-      --spacing-small: 0.5rem;
-      --spacing-medium: 1rem;
-      --spacing-large: 2rem;
-  
-      /* Border Radius */
-      --border-radius: 8px;
+    /* Spacing */
+    --spacing-small: 0.5rem;
+    --spacing-medium: 1rem;
+    --spacing-large: 2rem;
+
+    /* Border Radius */
+    --border-radius: 8px;
   }
   
 /* Reset */

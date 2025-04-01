@@ -163,7 +163,7 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 48vh; /* Reduced height for less whitespace */
+    height: 45vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
@@ -173,8 +173,44 @@
 }
 
 .profile-image {
-    height: 50vh;
+    height: 48vh;
     width: auto;
     margin-left: 80px;
     margin-bottom: -65px;
+}
+
+/* Footer Section */
+.site-footer {
+    background-color: var(--color-secondary);
+    color: var(--color-accent);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+}
+
+.footer-text {
+    font-weight: var(--font-weight-bold);
+    margin-top: 6px;
+}
+
+/* Icon Container */
+.social-icons {
+    display: flex;
+    gap: var(--spacing-small);
+}
+
+/* Circular Icon Backgrounds */
+.icon-circle {
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SVG Icons */
+.social-icon {
+    width: 35px;
+    height: 35px;
 }
