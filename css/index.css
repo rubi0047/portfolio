@@ -141,22 +141,6 @@
 }
 
 /* Profile Section */
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.shape-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 .profile-section {
     position: relative;
     background-color: var(--color-primary);
