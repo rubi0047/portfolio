@@ -129,3 +129,42 @@
     width: 38px;
     height: 38px;
 }
+
+/* Media Queries */
+
+/* Styles specific to iPad Pro 11" */
+@media (min-width: 834px) {
+    /* Navigation Section */
+    .nav-top {
+      display: none; /* Hide black header */
+    }
+  
+    .nav-bottom {
+      flex-direction: row !important;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--spacing-medium) var(--spacing-large);
+    }
+  
+    .logo-container {
+      position: static;
+      width: 110px;
+      margin-left: var(--spacing-medium);
+    }
+  
+    .nav {
+      flex-direction: row !important;
+      justify-content: flex-end;
+      align-items: center;
+      gap: var(--spacing-large);
+      margin: 0;
+    }
+  
+    .nav-link {
+      margin: 0;
+      padding: var(--spacing-small) var(--spacing-medium);
+    }
+
+    
+}
+  
