@@ -149,7 +149,7 @@
 }
   
   /* Styles for Large Screens */
-  @media (min-width: 1440px) {
+  @media (min-width: 1555px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
