@@ -19,11 +19,19 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <!-- Skip Links -->
+    <nav class="visually-hidden-focusable skip-links position-absolute z-3 p-2 bg-white" role="navigation" aria-label="Skip to content links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <a href="#navTop" class="text-dark text-decoration-underline me-3" itemprop="url">Skip to Top</a>
+        <a href="#mainContent" class="text-dark text-decoration-underline me-3" itemprop="url">Skip to Main Content</a>
+        <a href="#footerBottom" class="text-dark text-decoration-underline" itemprop="url">Skip to Footer</a>
+    </nav>
+
+  
     <!-- Header Section -->
     <header class="nav-container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
 
         <!-- Top Black Section -->
-        <div class="nav-top text-center py-2">
+        <div class="nav-top text-center py-2" id="navTop">
             <h2 class="menu-text" itemprop="headline">Menu</h2>
         </div>
     
@@ -68,7 +76,7 @@
     </header>
 
     <!-- Main Content -->
-    <main class="main-wrapper" itemscope itemtype="https://schema.org/WebPageElement" role="main">
+    <main class="main-wrapper" id="mainContent" itemscope itemtype="https://schema.org/WebPageElement" role="main">
 
         <!-- Welcome Section -->
         <section class="welcome-section text-start py-4 px-3 d-flex flex-column" itemscope itemtype="https://schema.org/WebPage">
@@ -91,14 +99,14 @@
         <!-- Profile Section -->
         <section class="profile-section text-center" itemscope itemtype="https://schema.org/Person" aria-label="Profile">
             <div class="profile-image-container">
-                <img src="images/s-profile-1.png" alt="Profile Image" class="profile-image" itemprop="image">
+                <img src="images/s-profile-1.png" alt="Profile Image of Sam Rubinoff Wearing a Black Hat and Sweater" class="profile-image" itemprop="image">
             </div>
         </section>
     
     </main>
    
     <!-- Footer Section -->    
-    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo">
+    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" id="footerBottom" itemtype="https://schema.org/WPFooter" role="contentinfo">
 
         <!-- Copyright -->
         <p class="footer-text mb-0" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">&copy;Rubinnovate_2025</p>

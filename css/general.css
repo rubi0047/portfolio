@@ -38,6 +38,38 @@
     box-sizing: border-box;
 }
 
+/* Skip Links */
+.visually-hidden-focusable {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background-color: var(--color-primary) !important; /* Ensure custom background shows */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    border-radius: var(--border-radius);
+}
+  
+.visually-hidden-focusable a {
+    display: block;
+    color: var(--color-secondary) !important; /* Force black text */
+    text-decoration: underline;
+    font-weight: var(--font-weight-bold);
+}
+  
+.visually-hidden-focusable a:focus {
+    background-color: var(--color-accent) !important; /* White background on focus */
+    color: var(--color-secondary) !important; /* Keep black text */
+    outline: 2px solid var(--color-secondary);
+    border-radius: var(--border-radius);
+}
+  
+.visually-hidden-focusable:focus-within {
+    transform: translateY(0); /* Reveal when focused */
+}
+
+/* Navigation Section*/
 /* Navigation Container */
 .nav-container {
     width: 100%;
@@ -131,37 +163,38 @@
 }
 
 /* Media Queries */
-
-/* Styles specific to iPad Pro 11" */
+/* Styles for Medium Screens */
 @media (min-width: 834px) {
     /* Navigation Section */
     .nav-top {
-      display: none; /* Hide black header */
+        display: none; /* Hide black header */
     }
-  
+    
+    /* Bottom Yellow Section (Logo + Links) */
     .nav-bottom {
-      flex-direction: row !important;
-      justify-content: space-between;
-      padding: var(--spacing-medium) var(--spacing-large);
+        flex-direction: row !important;
+        justify-content: space-between;
+        padding: var(--spacing-medium) var(--spacing-large); /* Balanced spacing on desktop */
     }
-  
+    
+    /* Logo Container */
     .logo-container {
-      position: static;
-      width: 110px;
-      margin-left: var(--spacing-medium);
+        position: static; /* Unset absolute for inline alignment */
+        width: 110px;
+        margin-left: var(--spacing-medium); /* Space between logo and edge */
     }
-  
+    
+    /* Navigation Links */
     .nav {
-      flex-direction: row !important;
-      justify-content: flex-end;
-      align-items: center;
-      gap: var(--spacing-large);
-      margin: 0;
+        flex-direction: row !important;
+        justify-content: flex-end;
+        align-items: center;
+        gap: var(--spacing-large); /* Even spacing between links */
+        margin: 0;
     }
-  
+    
     .nav-link {
-      margin: 0;
-      padding: var(--spacing-small) var(--spacing-medium);
+        margin: 0;
     }
 }
   
