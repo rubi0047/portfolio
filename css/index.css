@@ -100,102 +100,103 @@
 }
 
 /* Media Queries */
-
-/* Styles specific to iPad Pro 11" */
+/* Styles for Medium Screens */
 @media (min-width: 834px) {
+    /* Welcome Section */
     .welcome-section {
-      align-items: center; /* Center the whole section horizontally */
+        align-items: center; /* Center the whole section horizontally */
     }
-  
+    
     .welcome-text {
         font-size: 1.7rem;
     }
-
+    
     .brand-name {
         font-size: 3rem; /* ~48px, bigger headline */
     }
-
+    
     .description {
         font-size: 1.4rem;
-      }
-
+    }
+    
     .welcome-section > *:not(.button-group) {
-      max-width: 600px; /* Restrict width of text content */
-      width: 60%;
+        max-width: 600px; /* Restrict width of text content */
+        width: 60%;        /* Keep it responsive on large screens */
     }
-  
+    
     .button-group {
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: var(--spacing-medium);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-medium);
     }
-  
+    
     .btn {
-      margin: 0;
-      font-size: 2rem;
+        margin: 0;
+        font-size: 2rem; /* Boost button readability for desktop */
     }
-
+    
     /* Profile Section */
     .profile-section {
         height: 60vh; /* Reduced height for less whitespace */
     }
-
+    
     .profile-image {
         height: 65vh;
         width: auto;
-        margin-left: 155px;
+        margin-left: 155px; /* Push image closer to center visually */
     }
-  }
+}
   
   /* Styles for Large Screens */
   @media (min-width: 1440px) {
+    /* Main Wrapper */
     .main-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary); /* Matches welcome section background */
     }
     
+    /* Welcome Section */
     .welcome-section {
         width: 60%;
     }
-
+    
     .welcome-section > *:not(.button-group) {
         max-width: 700px;
         width: 100%;
-        margin-left: 60px;
+        margin-left: 60px; /* Pushes content away from left edge */
     }
-
+    
     .welcome-text {
         font-size: 3rem;
     }
-
+    
     .brand-name {
-        font-size: 4.5rem; /* ~64px, bigger headline */
+        font-size: 4.5rem; /* Large, prominent headline */
     }
-
+    
     .description {
         font-size: 3rem;
     }
-
+    
     .button-group {
         gap: var(--spacing-large);
     }
-
+    
     .btn {
         width: 325px;
-        font-size: 3rem;
+        font-size: 3rem; /* Big, tap-friendly buttons */
     }
-
+    
     /* Profile Section */
     .profile-section {
-        height: 84vh; /* Reduced height for less whitespace */
+        height: 84vh; /* Reduces top whitespace while keeping balance */
     }
-
+    
     .profile-image {
         height: 90vh;
-        width: auto;
+        width: auto; /* Maintains image's natural aspect ratio */
     }
-  }
-  
+}
