@@ -33,3 +33,23 @@
     background-color: var(--color-secondary);
     color: var(--color-accent);
 }
+
+@media (min-width: 834px) {
+    .portfolio-icon {
+        width: 500px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .clear-btn {
+       font-size: var(--font-size-h2);
+       width: 200px;
+       height: auto;
+       margin-top: -80px;
+    }
+}
+
+@media (min-width: 1555px) {
+
+}
