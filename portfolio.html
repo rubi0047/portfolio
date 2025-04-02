@@ -81,26 +81,97 @@
       
           <!-- Video -->
           <div class="portfolio-item text-center mb-5 position-relative" itemscope itemtype="https://schema.org/VideoObject">
-            <img src="images/video-icon.png" alt="Video Icon" class="portfolio-icon" itemprop="thumbnailUrl">
+
+            <picture>
+                <!-- XS/ Small screens (≤ 350px) -->
+                <source 
+                  srcset="images/video-icon-350w.png, 
+                          images/video-icon-700w.png 2x"
+                  media="(max-width: 833px)">
+              
+                <!-- Medium screens (≤ 834px) -->
+                <source 
+                  srcset="images/video-icon-600w.png, 
+                          images/video-icon-1024w.png 2x"
+                  media="(max-width: 834px)">
+              
+                <!-- Larger screens -->
+                <source 
+                  srcset="images/video-icon-1024w.png, 
+                          images/video-icon-2128w.png 2x"
+                  media="(min-width: 835px)">
+              
+                <!-- Fallback image -->
+                <img src="images/video-icon-600w.png" alt="Video Icon" class="portfolio-icon" aria-label="Video portfolio icon" itemprop="thumbnailUrl">
+            </picture>
+
             <a href="https://drive.google.com/drive/folders/1GrfGurenkT2cen1F5KusMKUpqs_LqBzV?usp=sharing" target="_blank" class="btn clear-btn" itemprop="contentUrl" aria-label="View video portfolio on Google Drive">Video</a>
+
           </div>
       
           <!-- Photos -->
           <div class="portfolio-item text-center mb-5 position-relative" itemscope itemtype="https://schema.org/ImageGallery">
-            <img src="images/camera-icon.png" alt="Camera Icon" class="portfolio-icon" itemprop="thumbnailUrl">
+           
+            <picture>
+                <!-- XS/ Small screens (≤ 350px) -->
+                <source 
+                  srcset="images/camera-icon-350w.png, 
+                          images/camera-icon-700w.png 2x"
+                  media="(max-width: 833px)">
+              
+                <!-- Medium screens (≤ 834px) -->
+                <source 
+                  srcset="images/camera-icon-600w.png, 
+                          images/camera-icon-1024w.png 2x"
+                  media="(max-width: 834px)">
+              
+                <!-- Larger screens -->
+                <source 
+                  srcset="images/camera-icon-1024w.png, 
+                          images/camera-icon-2128w.png 2x"
+                  media="(min-width: 835px)">
+              
+                <!-- Fallback image -->
+                <img src="images/camera-icon-600w.png" alt="Camera Icon" class="portfolio-icon" aria-label="Photography portfolio icon" itemprop="thumbnailUrl">
+            </picture>
+
             <a href="https://www.instagram.com/samraphone/" target="_blank" class="btn clear-btn" itemprop="url" aria-label="View photo portfolio on Instagram">Photos</a>
+
           </div>
       
           <!-- Projects -->
           <div class="portfolio-item text-center position-relative" itemscope itemtype="https://schema.org/CreativeWork">
-            <img src="images/notepad-icon.png" alt="Notepad Icon" class="portfolio-icon" itemprop="thumbnailUrl">
+            
+            <picture>
+                <!-- XS/ Small screens (≤ 350px) -->
+                <source 
+                  srcset="images/notepad-icon-350w.png, 
+                          images/notepad-icon-700w.png 2x"
+                  media="(max-width: 833px)">
+              
+                <!-- Medium screens (≤ 834px) -->
+                <source 
+                  srcset="images/notepad-icon-600w.png, 
+                          images/notepad-icon-1024w.png 2x"
+                  media="(max-width: 834px)">
+              
+                <!-- Larger screens -->
+                <source 
+                  srcset="images/notepad-icon-1024w.png, 
+                          images/notepad-icon-2128w.png 2x"
+                  media="(min-width: 835px)">
+              
+                <!-- Fallback image -->
+                <img src="images/notepad-icon-600w.png" alt="Notepad Icon" class="portfolio-icon" aria-label="General portfolio icon" itemprop="thumbnailUrl">
+            </picture>
+
             <a href="https://drive.google.com/drive/folders/1dchyzNFI1RU-HGGFgF3jBQeFUmTj-lGl?usp=sharing" target="_blank" class="btn clear-btn" itemprop="url" aria-label="View project documents on Google Drive">Projects</a>
+
           </div>
       
         </section>
       
     </main>
-      
       
     <!-- Footer Section -->    
     <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" id="footerBottom" itemtype="https://schema.org/WPFooter" role="contentinfo">
