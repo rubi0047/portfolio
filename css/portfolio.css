@@ -34,7 +34,9 @@
     color: var(--color-accent);
 }
 
-@media (min-width: 834px) {
+/* Media Queries */
+/* Styles for Medium Screens (834x1464= iPad Pro 11") */
+@media (min-width: 833px) {
     .portfolio-icon {
         width: 500px;
         height: auto;
@@ -50,6 +52,7 @@
     }
 }
 
+/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
 @media (min-width: 1440px) {
     .main-wrapper {
       display: flex;

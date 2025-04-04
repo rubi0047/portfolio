@@ -35,7 +35,7 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 55vh; /* Reduced height for less whitespace */
+    height: 55vh;
     overflow: hidden;
 }
 
@@ -79,5 +79,48 @@
         height: 75vh;
         width: auto;
         margin-right: 260px;
+    }
+}
+
+/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
+@media (min-width: 1440px) {
+    /* Main Wrapper */
+    .main-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .about-section {
+        align-items: center;
+        margin: 0;
+        margin-right: 20px;
+    }
+
+    .about-intro {
+        font-size: 2.5rem;
+    }
+
+    .about-title {
+        font-size: 4rem;
+    }
+    
+    .about-description {
+        font-size: 1.8rem;
+    }
+
+    /* Profile Section */
+    .profile-2-section {
+        height: 79vh; /* Increases height for less whitespace */
+    }
+
+    .about-image {
+        height: 86vh;
+        width: auto;
+        margin: 0;
+        margin-top: -60px;
+        margin-left: -40px;
+        padding-right: 100px;
+        display: block;
     }
 }
