@@ -88,7 +88,7 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 46vh; /* Reduced height for less whitespace */
+    height: 60vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
@@ -98,7 +98,7 @@
 }
 
 .profile-image {
-    height: 50vh;
+    height: 65vh;
     width: auto;
     margin-right: 25px;
     margin-top: -40px;
@@ -143,17 +143,17 @@
     
     /* Profile Section */
     .profile-section {
-        height: 61vh; /* Reduced height for less whitespace */
+        height: 94vh; /* Reduced height for less whitespace */
     }
     
     .profile-image {
-        height: 65vh;
+        height: 100vh;
         width: auto;
     }
 }
   
   /* Styles for Large Screens (1512x982= Macbook Pro 14")*/
-  @media (min-width: 1440px) {
+  @media (min-width: 1380px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
