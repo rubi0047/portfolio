@@ -35,7 +35,7 @@
 }
 
 /* Media Queries */
-/* Styles for Medium Screens (834x1464= iPad Pro 11") */
+/* Styles for Medium Screens (834x1194= iPad Pro 11") */
 @media (min-width: 833px) {
     .portfolio-icon {
         width: 500px;
