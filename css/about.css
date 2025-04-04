@@ -49,4 +49,35 @@
     margin-right: 165px;
     margin-top: -50px;
 }
-  
+
+/* Media Queries */
+/* Styles for Medium Screens (834x1464= iPad Pro 11") */
+@media (min-width: 833px) {
+    .about-section {
+        align-items: center;
+        margin-left: 95px;
+    }
+
+    .about-intro {
+        font-size: 1.7rem;
+    }
+
+    .about-title {
+        font-size: 3rem;
+    }
+    
+    .about-description {
+        font-size: 1.4rem;
+    }
+
+    /* Profile Section */
+    .profile-2-section {
+        height: 70vh; /* Reduced height for less whitespace */
+    }
+    
+    .about-image {
+        height: 75vh;
+        width: auto;
+        margin-right: 260px;
+    }
+}

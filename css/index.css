@@ -1,3 +1,7 @@
+.main-wrapper {
+    align-items: center;
+}
+
 /* Welcome Section */
 .welcome-section {
     background-color: var(--color-primary);
