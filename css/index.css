@@ -84,7 +84,7 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 45vh; /* Reduced height for less whitespace */
+    height: 49vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
@@ -94,14 +94,14 @@
 }
 
 .profile-image {
-    height: 45vh;
+    height: 50vh;
     width: auto;
     margin-right: 25px;
 }
 
 /* Media Queries */
-/* Styles for Medium Screens */
-@media (min-width: 834px) {
+/* Styles for Medium Screens (834x1464= iPad Pro 11") */
+@media (min-width: 833px) {
     /* Welcome Section */
     .welcome-section {
         align-items: center; /* Center the whole section horizontally */
@@ -121,7 +121,7 @@
     
     .welcome-section > *:not(.button-group) {
         max-width: 600px; /* Restrict width of text content */
-        width: 60%;        /* Keep it responsive on large screens */
+        width: 60%;
     }
     
     .button-group {
@@ -138,29 +138,23 @@
     
     /* Profile Section */
     .profile-section {
-        height: 60vh; /* Reduced height for less whitespace */
+        height: 64vh; /* Reduced height for less whitespace */
     }
     
     .profile-image {
-        height: 64vh;
+        height: 65vh;
         width: auto;
-        margin-left: 30px; /* Push image closer to right-center visually */
     }
 }
   
   /* Styles for Large Screens */
-  @media (min-width: 1555px) {
+  @media (min-width: 1440px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;
         background-color: var(--color-primary); /* Matches welcome section background */
-    }
-    
-    /* Welcome Section */
-    .welcome-section {
-        width: 60%;
     }
     
     .welcome-section > *:not(.button-group) {
@@ -192,11 +186,12 @@
     
     /* Profile Section */
     .profile-section {
-        height: 84vh; /* Reduces top whitespace while keeping balance */
+        height: 79vh; /* Reduces top whitespace while keeping balance */
     }
     
     .profile-image {
-        height: 90vh;
+        height: 80vh;
         width: auto; /* Maintains image's natural aspect ratio */
+        margin-right: 75px;
     }
 }
