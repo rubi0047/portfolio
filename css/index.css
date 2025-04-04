@@ -28,7 +28,7 @@
     font-size: var(--font-size-body);
     color: var(--color-secondary);
     margin: var(--spacing-small) 0;
-    line-height: 1.5;
+    line-height: 2;
     max-width: 80%; /* Limit width to create a natural wrap */
 }
 
