@@ -84,7 +84,7 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 49vh; /* Reduced height for less whitespace */
+    height: 46vh; /* Reduced height for less whitespace */
     overflow: hidden;
 }
 
@@ -97,6 +97,7 @@
     height: 50vh;
     width: auto;
     margin-right: 25px;
+    margin-top: -40px;
 }
 
 /* Media Queries */
@@ -138,7 +139,7 @@
     
     /* Profile Section */
     .profile-section {
-        height: 64vh; /* Reduced height for less whitespace */
+        height: 61vh; /* Reduced height for less whitespace */
     }
     
     .profile-image {
@@ -186,7 +187,7 @@
     
     /* Profile Section */
     .profile-section {
-        height: 79vh; /* Reduces top whitespace while keeping balance */
+        height: 73vh; /* Reduces top whitespace while keeping balance */
     }
     
     .profile-image {
