@@ -82,13 +82,13 @@
     .about-image {
         height: 84vh;
         width: auto;
-        margin-top: -70px;
-        margin-right: 315px;
+        margin-top: -65px;
+        margin-right: 210px;
     }
 }
 
 /* Styles for Large Screens (1512x982= Macbook Pro 14")*/
-@media (min-width: 1440px) {
+@media (min-width: 1380px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
@@ -100,7 +100,7 @@
     .about-section {
         align-items: center;
         margin: 0;
-        margin-right: 20px;
+        margin-right: 50px;
     }
 
     .about-text {
@@ -121,16 +121,15 @@
 
     /* Profile Section */
     .profile-2-section {
-        height: 79vh; /* Increases height for less whitespace */
+        height: 74vh; /* Increases height for less whitespace */
     }
 
     .about-image {
-        height: 86vh;
+        height: 82vh;
         width: auto;
         margin: 0;
-        margin-top: -60px;
+        margin-top: -64px;
         margin-left: -40px;
-        padding-right: 100px;
-        display: block;
+        padding-right: 80px;
     }
 }
