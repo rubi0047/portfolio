@@ -44,10 +44,10 @@
 }
 
 .about-image {
-    height: 60vh;
+    height: 59vh;
     width: auto;
     margin-right: 165px;
-    margin-top: -50px;
+    margin-top: -42px;
 }
 
 /* Media Queries */
@@ -82,8 +82,8 @@
     .about-image {
         height: 84vh;
         width: auto;
-        margin-top: -65px;
-        margin-right: 210px;
+        margin-top: -47px;
+        margin-right: 275px;
     }
 }
 
@@ -125,11 +125,11 @@
     }
 
     .about-image {
-        height: 82vh;
+        height: 81vh;
         width: auto;
         margin: 0;
-        margin-top: -64px;
-        margin-left: -40px;
+        margin-top: -48px;
+        margin-left: -15px;
         padding-right: 80px;
     }
 }
