@@ -91,7 +91,34 @@
           
         <section class="profile-2-section">
             <div class="about-image-container">
-              <img src="images/s-profile-2.png" alt="Sam Rubinoff smiling with arms crossed" class="about-image" itemprop="image">
+                <picture>
+                    <!-- Extra small screens -->
+                    <source 
+                        srcset="images/s-profile-2-300w.png, 
+                                images/s-profile-2-600w.png 2x"
+                        media="(max-width: 400px)">
+                
+                    <!-- Small screens -->
+                    <source 
+                        srcset="images/s-profile-2-600w.png, 
+                                images/s-profile-2-900w.png 2x"
+                        media="(max-width: 768px)">
+                
+                    <!-- Tablet screens -->
+                    <source 
+                        srcset="images/s-profile-2-900w.png, 
+                                images/s-profile-2-1300w.png 2x"
+                        media="(max-width: 1024px)">
+                
+                    <!-- Desktop screens -->
+                    <source 
+                        srcset="images/s-profile-2-1300w.png, 
+                                images/s-profile-2-1938w.png 2x"
+                        media="(min-width: 1025px)">
+                
+                    <!-- Fallback -->
+                    <img src="images/s-profile-2-900w.png" alt="Sam Rubinoff smiling with arms crossed" class="about-image" aria-label="About profile image of Sam Rubinoff" itemprop="image">
+                </picture>
             </div>
         </section>
           
