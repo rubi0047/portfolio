@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Portfolio Page</title>
     <link rel="icon" type="image/png" href="images/sam-logo.png">
 
     <!-- Bootstrap CSS -->
@@ -16,5 +16,62 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/general.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/portfolio.css">
 </head>
+<body>
+    <!-- Skip Links -->
+    <nav class="visually-hidden-focusable skip-links position-absolute z-3 p-2 bg-white" role="navigation" aria-label="Skip to content links" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <a href="#navTop" class="text-dark text-decoration-underline me-3" itemprop="url">Skip to Top</a>
+        <a href="#mainContent" class="text-dark text-decoration-underline me-3" itemprop="url">Skip to Main Content</a>
+        <a href="#footerBottom" class="text-dark text-decoration-underline" itemprop="url">Skip to Footer</a>
+    </nav>
+  
+    <!-- Header Section -->
+    <header class="nav-container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
+
+        <!-- Top Black Section -->
+        <div class="nav-top text-center py-2" id="navTop">
+            <h2 class="menu-text" itemprop="headline">Menu</h2>
+        </div>
+    
+        <!-- Logo and Navigation Links -->
+        <div class="nav-bottom d-flex flex-column align-items-center position-relative">
+            
+            <!-- Logo -->
+            <div class="logo-container" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                <a href="index.html" aria-label="Go to homepage">
+                  <picture>
+                      <!-- Small screens -->
+                      <source 
+                      srcset="images/sam-logo-256w.png, 
+                              images/sam-logo-512w.png 2x"
+                      media="(max-width: 480px)">
+                  
+                      <!-- Medium screens -->
+                      <source 
+                      srcset="images/sam-logo-512w.png, 
+                              images/sam-logo-768w.png 2x"
+                      media="(max-width: 1024px)">
+                  
+                      <!-- Large screens -->
+                      <source 
+                      srcset="images/sam-logo-768w.png, 
+                              images/sam-logo-1024w.png 2x"
+                      media="(min-width: 1025px)">
+                  
+                      <!-- Fallback image -->
+                      <img src="images/sam-logo-512w.png" class="logo" alt="Rubinnovate logo" aria-label="Rubinnovate Logo" itemprop="logo">
+                  </picture>
+                </a>
+            </div>
+    
+            <!-- Navigation Links -->
+            <nav class="nav flex-column text-center mt-3" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="Primary">
+                <a href="index.html" class="nav-link" itemprop="url" aria-current="page">Home</a>
+                <a href="about.html" class="nav-link" itemprop="url">About</a>
+                <a href="portfolio.html" class="nav-link active" itemprop="url">Portfolio</a>
+                <a href="contact.html" class="nav-link" itemprop="url">Contact</a>
+            </nav>
+        </div>
+
+    </header>
