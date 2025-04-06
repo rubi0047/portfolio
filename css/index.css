@@ -169,15 +169,15 @@
     }
     
     .welcome-text {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .brand-name {
-        font-size: 4.5rem; /* Large, prominent headline */
+        font-size: 4rem; /* Large, prominent headline */
     }
     
     .description {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .button-group {
@@ -185,18 +185,19 @@
     }
     
     .btn {
-        width: 325px;
-        font-size: 3rem; /* Big, tap-friendly buttons */
+        width: 310px;
+        font-size: 2.5rem; /* Big, tap-friendly buttons */
     }
     
     /* Profile Section */
     .profile-section {
-        height: 79vh; /* Reduces top whitespace while keeping balance */
+        height: 74vh;
     }
     
     .profile-image {
-        height: 84vh;
+        height: 80vh;
         width: auto; /* Maintains image's natural aspect ratio */
-        margin-right: 60px;
+        margin-right: 110px;
+        margin-top: -47px;
     }
 }
