@@ -30,38 +30,40 @@
     <header class="nav-container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
 
         <!-- Hidden h1 -->
-        <h1 class="hidden-portfolio-title">Rubinnovate Portfolio</h1>
+        <h1 class="hidden-portfolio-title" itemprop="name" aria-label="Rubinnovate Portfolio Page Title">
+            Sam Rubinoff's Portfolio
+        </h1>
 
         <!-- Top Black Section -->
-        <div class="nav-top text-center py-2" id="navTop">
-            <h2 class="menu-text" itemprop="headline">Menu</h2>
+        <div class="nav-top text-center py-2" id="navTop" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
+            <h2 class="menu-text" itemprop="name">Menu</h2>
         </div>
     
         <!-- Logo and Navigation Links -->
         <div class="nav-bottom d-flex flex-column align-items-center position-relative">
-            
+    
             <!-- Logo -->
             <div class="logo-container" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
-                <a href="index.html" aria-label="Go to homepage">
+                <a href="index.html" itemprop="url" aria-label="Go to Rubinnovate Homepage">
                     <picture>
                         <!-- Small screens -->
                         <source 
                         srcset="images/sam-logo-256w.png, 
                                 images/sam-logo-512w.png 2x"
                         media="(max-width: 480px)">
-                    
+                        
                         <!-- Medium screens -->
                         <source 
                         srcset="images/sam-logo-512w.png, 
                                 images/sam-logo-768w.png 2x"
                         media="(max-width: 1024px)">
-                    
+                        
                         <!-- Large screens -->
                         <source 
                         srcset="images/sam-logo-768w.png, 
                                 images/sam-logo-1024w.png 2x"
                         media="(min-width: 1025px)">
-                    
+                        
                         <!-- Fallback image -->
                         <img src="images/sam-logo-512w.png" class="logo" alt="Rubinnovate logo" aria-label="Rubinnovate Logo" itemprop="logo">
                     </picture>
@@ -69,15 +71,15 @@
             </div>
     
             <!-- Navigation Links -->
-            <nav class="nav flex-column text-center mt-3" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="Primary">
-                <a href="index.html" class="nav-link" itemprop="url" aria-current="page">Home</a>
-                <a href="about.html" class="nav-link" itemprop="url">About</a>
-                <a href="portfolio.html" class="nav-link active" itemprop="url">Portfolio</a>
-                <a href="contact.html" class="nav-link" itemprop="url">Contact</a>
+            <nav class="nav flex-column text-center mt-3" itemscope itemtype="https://schema.org/SiteNavigationElement" aria-label="Primary Navigation">
+                <a href="index.html" class="nav-link" itemprop="url" aria-label="Home page">Home</a>
+                <a href="about.html" class="nav-link" itemprop="url" aria-label="About page">About</a>
+                <a href="portfolio.html" class="nav-link active" itemprop="url" aria-current="page" aria-label="Portfolio page">Portfolio</a>
+                <a href="contact.html" class="nav-link" itemprop="url" aria-label="Contact page">Contact</a>
             </nav>
-
+        
         </div>
-
+    
     </header>
 
     <!-- Main Content -->
@@ -180,7 +182,7 @@
     </main>
       
     <!-- Footer Section -->    
-    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo">
+    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Footer Section">
 
         <!-- Copyright -->
         <p class="footer-text mb-0" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">&copy;Rubinnovate_2025</p>
