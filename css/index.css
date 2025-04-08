@@ -126,7 +126,7 @@
     
     .welcome-section > *:not(.button-group) {
         max-width: 600px; /* Restrict width of text content */
-        width: 60%;
+        width: 74%;
     }
     
     .button-group {
