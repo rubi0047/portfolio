@@ -87,8 +87,8 @@
     }
 }
 
-/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
-@media (min-width: 1380px) {
+ /* Styles for Large Screens (1450x832= Macbook Air)*/
+@media (min-width: 1400px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
@@ -100,7 +100,7 @@
     .about-section {
         align-items: center;
         margin: 0;
-        margin-right: 50px;
+        margin-right: 60px;
         margin-top: -55px;
     }
 
@@ -130,7 +130,6 @@
         width: auto;
         margin: 0;
         margin-top: -48px;
-        margin-left: -15px;
-        padding-right: 80px;
+        margin-left: -50px;
     }
 }

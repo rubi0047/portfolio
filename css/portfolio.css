@@ -64,7 +64,7 @@
     }
 }
 
-/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
+ /* Styles for Large Screens (1450x832= Macbook Air)*/
 @media (min-width: 1400px) {
     .main-wrapper {
       display: flex;
@@ -92,12 +92,12 @@
     }
   
     .portfolio-icon {
-      width: 450px;
+      width: 400px;
       height: auto;
     }
   
     .clear-btn {
-      width: 300px;
+      width: 250px;
       font-size: 3rem;
       padding: 0.5rem 2rem;
       margin-top: -45px;

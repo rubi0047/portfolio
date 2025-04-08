@@ -152,7 +152,7 @@
     }
 }
   
-  /* Styles for Large Screens (1512x982= Macbook Pro 14")*/
+  /* Styles for Large Screens (1450x832= Macbook Air)*/
   @media (min-width: 1400px) {
     /* Main Wrapper */
     .main-wrapper {
@@ -200,9 +200,7 @@
     }
     
     .profile-image {
-        height: 75vh;
-        width: auto; /* Maintains image's natural aspect ratio */
-        margin-right: 110px;
-        margin-top: -47px;
+        width: 980px;
+        height: auto;
     }
 }

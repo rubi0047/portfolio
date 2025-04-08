@@ -200,7 +200,7 @@ body{
     }
 }
 
-/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
+ /* Styles for Large Screens (1450x832= Macbook Air)*/
 @media (min-width: 1380px) {
     /* Navigation Links */
     .nav {
