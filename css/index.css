@@ -202,5 +202,6 @@
     .profile-image {
         width: 980px;
         height: auto;
+        margin-right: 100px;
     }
 }
