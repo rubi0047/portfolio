@@ -88,8 +88,8 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 60vh; /* Reduced height for less whitespace */
-    overflow: hidden;
 }
 
 /* Profile Image */
@@ -100,7 +100,6 @@
 .profile-image {
     height: 65vh;
     width: auto;
-    margin-right: 25px;
     margin-top: -40px;
 }
 
