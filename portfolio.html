@@ -27,18 +27,18 @@
         <a href="#footerBottom" class="text-dark text-decoration-underline" itemprop="url" aria-label="Skip to footer section">Skip to Footer</a>
     </nav>
   
+    <!-- Top Black Section -->
+    <div class="nav-top text-center py-2" id="navTop" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
+        <h2 class="menu-text" itemprop="name">Menu</h2>
+    </div>
+
     <!-- Header Section -->
-    <header class="nav-container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
+    <header class="container" itemscope itemtype="https://schema.org/WPHeader" role="banner">
 
         <!-- Hidden h1 -->
         <h1 class="hidden-portfolio-title" itemprop="name" aria-label="Rubinnovate Portfolio Page Title">
             Sam Rubinoff's Portfolio
         </h1>
-
-        <!-- Top Black Section -->
-        <div class="nav-top text-center py-2" id="navTop" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
-            <h2 class="menu-text" itemprop="name">Menu</h2>
-        </div>
     
         <!-- Logo and Navigation Links -->
         <div class="nav-bottom d-flex flex-column align-items-center position-relative">
@@ -108,7 +108,7 @@
                     <source 
                     srcset="images/video-icon-1024w-2.png, 
                             images/video-icon-1618w.png 2x"
-                    media="(min-width: 1380px)">
+                    media="(min-width: 1400px)">
                 
                     <!-- Fallback image -->
                     <img src="images/video-icon-600w.png" alt="Video Icon" class="portfolio-icon" aria-label="Video portfolio icon" itemprop="thumbnailUrl">
@@ -138,7 +138,7 @@
                     <source 
                     srcset="images/camera-icon-1024w-2.png, 
                             images/camera-icon-1618w.png 2x"
-                    media="(min-width: 1380px)">
+                    media="(min-width: 1400px)">
                 
                     <!-- Fallback image -->
                     <img src="images/camera-icon-600w.png" alt="Camera Icon" class="portfolio-icon" aria-label="Photography portfolio icon" itemprop="thumbnailUrl">
@@ -168,7 +168,7 @@
                     <source 
                     srcset="images/notepad-icon-1024w-2.png, 
                             images/notepad-icon-1618w.png 2x"
-                    media="(min-width: 1380px)">
+                    media="(min-width: 1400px)">
                 
                     <!-- Fallback image -->
                     <img src="images/notepad-icon-600w.png" alt="Notepad Icon" class="portfolio-icon" aria-label="General portfolio icon" itemprop="thumbnailUrl">
@@ -183,29 +183,31 @@
     </main>
       
     <!-- Footer Section -->    
-    <footer class="site-footer d-flex justify-content-between align-items-center px-4 py-3" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Footer Section">
+    <footer class="site-footer" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Footer Section">
 
-        <!-- Copyright -->
-        <p class="footer-text mb-0" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">&copy;Rubinnovate_2025</p>
+        <div class="container d-flex justify-content-between align-items-center px-4 py-3">
+            
+            <!-- Copyright -->
+            <p class="footer-text mb-0" itemprop="copyrightHolder" itemscope itemtype="https://schema.org/Organization">&copy;Rubinnovate_2025</p>
 
-        <!-- Social Media Links -->
-        <div class="social-icons d-flex gap-2" itemtype="https://schema.org/Organization" itemscope itemprop="publisher" aria-label="Rubinnovate social media links">
-            <meta itemprop="name" content="Rubinnovate">
+            <!-- Social Media Links -->
+            <div class="social-icons d-flex gap-2" itemtype="https://schema.org/Organization" itemscope itemprop="publisher" aria-label="Rubinnovate social media links">
+                <meta itemprop="name" content="Rubinnovate">
 
-            <a href="https://www.instagram.com/samraphone/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on Instagram">
-                <img src="images/instagram.svg" alt="Instagram" class="social-icon hvr-grow">
-            </a>
-            <a href="https://www.messenger.com/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Connect through Messenger">
-                <img src="images/messenger.svg" alt="Messenger" class="social-icon hvr-grow">
-            </a>
-            <a href="https://www.linkedin.com/in/samrubinoff/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on LinkedIn">
-                <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon hvr-grow">
-            </a>
-            <a href="https://www.youtube.com/@ksamrubinoff" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on YouTube">
-                <img src="images/youtube.svg" alt="YouTube" class="social-icon hvr-grow">
-            </a>
+                <a href="https://www.instagram.com/samraphone/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on Instagram">
+                    <img src="images/instagram.svg" alt="Instagram" class="social-icon hvr-grow">
+                </a>
+                <a href="https://www.messenger.com/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Connect through Messenger">
+                    <img src="images/messenger.svg" alt="Messenger" class="social-icon hvr-grow">
+                </a>
+                <a href="https://www.linkedin.com/in/samrubinoff/" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon hvr-grow">
+                </a>
+                <a href="https://www.youtube.com/@ksamrubinoff" target="_blank" class="icon-circle" itemprop="sameAs" aria-label="Rubinnovate on YouTube">
+                    <img src="images/youtube.svg" alt="YouTube" class="social-icon hvr-grow">
+                </a>
+            </div>
         </div>
-
     </footer>
     
     <!-- Bootstrap JS (for responsive components) -->

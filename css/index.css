@@ -153,7 +153,7 @@
 }
   
   /* Styles for Large Screens (1512x982= Macbook Pro 14")*/
-  @media (min-width: 1380px) {
+  @media (min-width: 1400px) {
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
@@ -167,7 +167,7 @@
     }
 
     .welcome-section > *:not(.button-group) {
-        max-width: 700px;
+        max-width: 640px;
         width: 100%;
         margin-left: 60px; /* Pushes content away from left edge */
     }
@@ -185,11 +185,12 @@
     }
     
     .button-group {
+        width: auto;
         gap: var(--spacing-large);
     }
     
     .btn {
-        width: 310px;
+        width: 280px;
         font-size: 2.5rem; /* Big, tap-friendly buttons */
     }
     
@@ -199,7 +200,7 @@
     }
     
     .profile-image {
-        height: 80vh;
+        height: 75vh;
         width: auto; /* Maintains image's natural aspect ratio */
         margin-right: 110px;
         margin-top: -47px;

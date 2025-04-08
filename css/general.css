@@ -38,6 +38,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--color-primary);
+}
+
 /* Skip Links */
 .visually-hidden-focusable {
     position: absolute;
@@ -70,10 +74,6 @@
 }
 
 /* Navigation Section*/
-/* Navigation Container */
-.nav-container {
-    width: 100%;
-}
 
 /* Top Black Section */
 .nav-top {
@@ -101,6 +101,7 @@
     width: 100%;
     height: auto;
     border-radius: 50%;
+    margin-left: -5px;
 }
 
 /* Navigation Links */
@@ -163,13 +164,27 @@
 }
 
 /* Media Queries */
-/* Styles for Medium Screens */
-@media (min-width: 834px) {
+/* Styles for Medium Screens (834x1194= iPad Pro 11") */
+@media (min-width: 833px) {
     /* Navigation Section */
     .nav-top {
         display: none; /* Hide black header */
     }
     
+     /* Navigation Links */
+     .nav {
+        flex-direction: row !important;
+        justify-content: flex-end;
+        align-items: center;
+        gap: var(--spacing-large); /* Even spacing between links */
+        margin: 0;
+        gap: var(--spacing-small);
+    }
+    
+    .nav-link {
+        margin: 0;
+    }
+
     /* Bottom Yellow Section (Logo + Links) */
     .nav-bottom {
         flex-direction: row !important;
@@ -183,17 +198,12 @@
         width: 110px;
         margin-left: var(--spacing-medium); /* Space between logo and edge */
     }
-    
+}
+
+/* Styles for Large Screens (1512x982= Macbook Pro 14")*/
+@media (min-width: 1380px) {
     /* Navigation Links */
     .nav {
-        flex-direction: row !important;
-        justify-content: flex-end;
-        align-items: center;
-        gap: var(--spacing-large); /* Even spacing between links */
-        margin: 0;
-    }
-    
-    .nav-link {
-        margin: 0;
+        gap: var(--spacing-medium);
     }
 }

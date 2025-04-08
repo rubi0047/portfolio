@@ -65,7 +65,7 @@
 }
 
 /* Styles for Large Screens (1512x982= Macbook Pro 14")*/
-@media (min-width: 1380px) {
+@media (min-width: 1400px) {
     .main-wrapper {
       display: flex;
       justify-content: center;
