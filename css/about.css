@@ -101,7 +101,7 @@
 
     .about-section {
         align-items: center;
-        margin-top: -70px;
+        margin-top: -55px;
     }
 
     .about-text {
@@ -122,14 +122,14 @@
 
     /* Profile Section */
     .profile-2-section {
-        height: 74vh; /* Increases height for less whitespace */
+        height: 74vh; 
         overflow: hidden;
     }
 
     .about-image {
         width: 850px;
         height: auto;
-        margin-top: -48px;
+        margin-top: 60px;
         margin-left: 80px;
     }
 }
