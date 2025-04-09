@@ -157,12 +157,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        align-items: center;
         background-color: var(--color-primary);
     }
     
     .welcome-section {
-        margin-left: 50px;
+        margin-left: 30px;
         margin-top: -65px;
     }
 
@@ -200,9 +199,9 @@
     }
     
     .profile-image {
-        width: 845px;
+        width: 850px;
         height: 570px;
         margin-top: -40px;
-        margin-left: -70px;
+        margin-left: -100px;
     }
 }
