@@ -16,6 +16,7 @@
 
 .portfolio-section {
     background-color: var(--color-primary);
+    height: 157vh;
   }
   
 .portfolio-icon {
@@ -49,7 +50,11 @@
 /* Media Queries */
 /* Styles for Medium Screens (834x1194= iPad Pro 11") */
 @media (min-width: 833px) {
-    .portfolio-icon {
+    .portfolio-section {
+      height: 225vh;
+    }
+  
+  .portfolio-icon {
         width: 500px;
         height: auto;
         display: block;
