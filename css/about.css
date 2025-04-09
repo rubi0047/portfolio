@@ -35,8 +35,8 @@
     padding: var(--spacing-large) 0;
     display: flex;
     justify-content: center;
-    height: 55vh;
-    overflow: hidden;
+    align-items: center;
+    height: 58vh;
 }
 
 .about-image-container {
@@ -44,10 +44,10 @@
 }
 
 .about-image {
-    height: 59vh;
-    width: auto;
-    margin-right: 165px;
-    margin-top: -42px;
+    width: 600px;
+    height: auto;
+    margin-top: -83px;
+    margin-left: 18px;
 }
 
 /* Media Queries */
@@ -76,14 +76,14 @@
 
     /* Profile Section */
     .profile-2-section {
-        height: 76vh;
+        height: 79vh;
     }
     
     .about-image {
-        height: 84vh;
-        width: auto;
-        margin-top: -47px;
-        margin-right: 275px;
+        width: 900px;
+        height: auto;
+        margin-top: -83px;
+        margin-left: 40px;
     }
 }
 
@@ -99,12 +99,11 @@
 
     .about-section {
         align-items: center;
-        margin: 0;
-        margin-top: -55px;
+        margin-top: -70px;
     }
 
     .about-text {
-        max-width: 1100px;
+        max-width: 900px;
     }
 
     .about-intro {
@@ -122,11 +121,13 @@
     /* Profile Section */
     .profile-2-section {
         height: 74vh; /* Increases height for less whitespace */
+        overflow: hidden;
     }
 
     .about-image {
-        width: 700px;
+        width: 850px;
         height: auto;
-        margin-left: 260px;
+        margin-top: -48px;
+        margin-left: 80px;
     }
 }
