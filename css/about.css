@@ -81,10 +81,10 @@
     }
     
     .about-image {
-        width: 780px;
+        width: 800px;
         height: auto;
-        margin-top: 5px;
-        margin-bottom: 90px;
+        /* margin-top: 5px; */
+        margin-bottom: 75px;
         margin-left: 40px;
     }
 }
