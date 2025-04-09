@@ -82,7 +82,11 @@
     }
     
     .about-image {
+        width: 800px;
+        height: auto;
+        margin-top: 1px;
         padding-bottom: 80px;
+        margin-left: 40px;
     }
 }
 
