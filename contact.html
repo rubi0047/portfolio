@@ -88,43 +88,42 @@
     <!-- Main Content -->
     <main class="container py-5 pb-5 mb-5" id="mainContent" itemscope itemtype="https://schema.org/WebPageElement" role="main">
 
-        <div class="row align-items-center text-center text-md-start">
-
+        <div class="row align-items-center text-center text-md-start" itemscope itemtype="https://schema.org/ContactPage">
+    
             <!-- Phone Icon -->
-            <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
-                <img src="images/phone-icon.png" alt="Phone Icon" class="img-fluid w-75 mx-auto d-block d-lg-inline">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start" aria-label="Rubinnovate contact visual">
+                <img src="images/phone-icon.png" alt="Phone Icon" class="img-fluid w-100 mx-auto d-block d-lg-inline" itemprop="image">
             </div>
-        
+    
             <!-- Contact Form -->
-            <div class="col-12 col-lg-6">
-                <h2 class="fw-bold fs-4 mt-4 text-contact text-center text-lg-start">(C) (819) 639-0666</h2>
-                <h2 class="fw-bold fs-5 text-contact text-center text-lg-start">samuel.rubinoff@outlook.com</h2>
-        
+            <div class="col-12 col-lg-6" itemscope itemtype="https://schema.org/Organization">
+                <h2 class="fw-bold fs-4 mt-4 text-contact text-center text-lg-start" itemprop="telephone" aria-label="Phone number">(C) (819) 639-0666</h2>
+                <h2 class="fw-bold fs-5 text-contact text-center text-lg-start" itemprop="email" aria-label="Email address">samuel.rubinoff@outlook.com</h2>
+    
                 <!-- Mailto Form -->
-                <form action="mailto:samuel.rubinoff@outlook.com?subject=Contact from Website" method="POST" enctype="text/plain" class="d-flex flex-column gap-3">
-
+                <form action="mailto:samuel.rubinoff@outlook.com?subject=Contact from Website" method="POST" enctype="text/plain" class="d-flex flex-column gap-3" aria-label="Contact form">
                     <label for="name" class="visually-hidden">Name</label>
-                    <input type="text" id="name" name="Name" placeholder="Name" class="form-control input-dark rounded-pill px-4 py-2" required>
+                    <input type="text" id="name" name="Name" placeholder="Name" class="form-control input-dark rounded-pill px-4 py-2" required itemprop="name">
             
                     <label for="phone" class="visually-hidden">Phone</label>
-                    <input type="text" id="phone" name="Phone" placeholder="Phone" class="form-control input-dark rounded-pill px-4 py-2">
+                    <input type="text" id="phone" name="Phone" placeholder="Phone" class="form-control input-dark rounded-pill px-4 py-2" itemprop="telephone">
             
                     <label for="subject" class="visually-hidden">Subject</label>
                     <input type="text" id="subject" name="Subject" placeholder="Subject" class="form-control input-dark rounded-pill px-4 py-2" required>
             
                     <label for="message" class="visually-hidden">Message</label>
-                    <textarea id="message" name="Message" rows="5" placeholder="Message" class="form-control input-dark rounded-4 px-4 py-2" required></textarea>
+                    <textarea id="message" name="Message" rows="5" placeholder="Message" class="form-control input-dark rounded-4 px-4 py-2" required itemprop="description"></textarea>
             
                     <div class="text-start">
-                        <button type="submit" class="btn custom-submit-btn rounded-pill px-4 py-2 mt-2 fw-bold hvr-shrink">Submit</button>
+                        <button type="submit" class="btn custom-submit-btn rounded-pill px-4 py-2 mt-2 fw-bold hvr-shrink" aria-label="Submit contact form">Submit</button>
                     </div>
-
                 </form>
             </div>
-
+    
         </div>
-
+    
     </main>
+    
       
     <!-- Footer Section -->    
     <footer class="site-footer fixed-bottom" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Footer Section">
