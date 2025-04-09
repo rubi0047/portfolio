@@ -82,11 +82,7 @@
     }
     
     .about-image {
-        width: 800px;
-        height: auto;
-        margin-top: 1px;
         padding-bottom: 80px;
-        margin-left: 40px;
     }
 }
 
@@ -95,18 +91,17 @@
     /* Main Wrapper */
     .main-wrapper {
         display: flex;
-        flex-direction: row-reverse;
         align-items: center;
         justify-content: center;
     }
 
     .about-section {
         align-items: center;
-        margin-top: -55px;
+        margin-top: -80px;
     }
 
     .about-text {
-        max-width: 900px;
+        max-width: 850px;
     }
 
     .about-intro {
@@ -130,7 +125,7 @@
     .about-image {
         width: 800px;
         height: auto;
-        margin-top: 60px;
-        margin-left: 80px;
+        margin-top: 40px;
+        margin-left: 60px;
     }
 }
