@@ -27,6 +27,11 @@
         <a href="#footerBottom" class="text-dark text-decoration-underline" itemprop="url" aria-label="Skip to footer section">Skip to Footer</a>
     </nav>
   
+    <!-- Hidden h1 -->
+    <h1 class="hidden-contact-title" itemprop="name" aria-label="Rubinnovate Contact Page Title">
+        Contact Sam Rubinoff
+    </h1>
+
     <!-- Top Black Section -->
     <div class="nav-top text-center py-2" id="navTop" itemprop="hasPart" itemscope itemtype="https://schema.org/SiteNavigationElement">
         <h2 class="menu-text" itemprop="name">Menu</h2>
@@ -80,33 +85,47 @@
     
     </header>
 
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
     <!-- Main Content -->
+    <main class="container py-5 pb-5 mb-5" id="mainContent" itemscope itemtype="https://schema.org/WebPageElement" role="main">
 
+        <div class="row align-items-center text-center text-md-start">
 
+            <!-- Phone Icon -->
+            <div class="col-12 col-md-6 mb-4 mb-md-0">
+                <img src="images/phone-icon.png" alt="Phone Icon" class="img-fluid w-75 mx-auto d-block d-md-inline">
+            </div>
+        
+            <!-- Contact Form -->
+            <div class="col-12 col-md-6">
+                <h2 class="fw-bold fs-4 text-center text-md-start text-contact">(C) (819) 639-0666</h2>
+                <h2 class="fw-bold fs-5 text-center text-md-start mb-4 text-contact">samuel.rubinoff@outlook.com</h2>
+        
+                <!-- Mailto Form -->
+                <form action="mailto:samuel.rubinoff@outlook.com?subject=Contact from Website" method="POST" enctype="text/plain" class="d-flex flex-column gap-3">
 
+                    <label for="name" class="visually-hidden">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Name" class="form-control input-dark rounded-pill px-4 py-2" required>
+            
+                    <label for="phone" class="visually-hidden">Phone</label>
+                    <input type="text" id="phone" name="Phone" placeholder="Phone" class="form-control input-dark rounded-pill px-4 py-2">
+            
+                    <label for="subject" class="visually-hidden">Subject</label>
+                    <input type="text" id="subject" name="Subject" placeholder="Subject" class="form-control input-dark rounded-pill px-4 py-2" required>
+            
+                    <label for="message" class="visually-hidden">Message</label>
+                    <textarea id="message" name="Message" rows="5" placeholder="Message" class="form-control input-dark rounded-4 px-4 py-2" required></textarea>
+            
+                    <div class="text-start">
+                        <button type="submit" class="btn custom-submit-btn rounded-pill px-4 py-2 mt-2 fw-bold">Submit</button>
+                    </div>
 
+                </form>
+            </div>
 
-
-
-
-
-
-
-
-
-
-
+        </div>
+        
+    </main>
+      
     <!-- Footer Section -->    
     <footer class="site-footer fixed-bottom" id="footerBottom" itemscope itemtype="https://schema.org/WPFooter" role="contentinfo" aria-label="Footer Section">
 
