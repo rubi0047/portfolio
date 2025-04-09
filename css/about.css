@@ -76,13 +76,13 @@
 
     /* Profile Section */
     .profile-2-section {
-        height: 79vh;
+        height: 1vh;
     }
     
     .about-image {
-        width: 900px;
+        width: 825px;
         height: auto;
-        margin-top: -83px;
+        margin-top: 550px;
         margin-left: 40px;
     }
 }
