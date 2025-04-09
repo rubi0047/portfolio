@@ -92,7 +92,30 @@
     
             <!-- Phone Icon -->
             <div class="col-12 col-lg-6 mb-4 mb-lg-0 text-center text-lg-start" aria-label="Rubinnovate contact visual">
-                <img src="images/phone-icon.png" alt="Phone Icon" class="img-fluid w-100 mx-auto d-block d-lg-inline" itemprop="image">
+
+                <picture>
+                    <!-- Small screens -->
+                    <source 
+                      srcset="images/phone-icon-300w.png, 
+                              images/phone-icon-786w.png 2x"
+                      media="(max-width: 480px)">
+                  
+                    <!-- Medium screens -->
+                    <source 
+                      srcset="images/phone-icon-786w.png, 
+                              images/phone-icon-1300w.png 2x"
+                      media="(max-width: 1024px)">
+                  
+                    <!-- Large screens -->
+                    <source 
+                      srcset="images/phone-icon-1300w.png, 
+                              images/phone-icon-1987w.png 2x"
+                      media="(min-width: 1025px)">
+                  
+                    <!-- Fallback image -->
+                    <img src="images/phone-icon-786w.png" alt="Phone Icon" class="img-fluid w-100 mx-auto d-block d-lg-inline" itemprop="image">
+                </picture>
+
             </div>
     
             <!-- Contact Form -->
