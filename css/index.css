@@ -89,20 +89,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh; /* Reduced height for less whitespace */
+    height: 54vh; /* Reduced height for less whitespace */
 }
 
 /* Profile Image */
-
-/* .profile-image-container {
-    position: relative;
-} */
-
-/* .profile-image {
-    height: 65vh;
-    width: auto;
-    margin-top: -40px;
-} */
+.profile-image {
+    width: 535px;
+    height: auto;
+    margin-top: -90px;
+    margin-left: -35px;
+}
 
 /* Media Queries */
 /* Styles for Medium Screens (834x1194= iPad Pro 11") */
@@ -143,13 +139,15 @@
     
     /* Profile Section */
     .profile-section {
-        height: 65vh; /* Reduced height for less whitespace */
+        height: 80vh; /* Reduced height for less whitespace */
     }
     
-    /* .profile-image {
-        height: 100vh;
-        width: auto;
-    } */
+    /* Profile Image */
+    .profile-image {
+        width: 880px;
+        height: auto;
+        margin-left: -35px;
+    }
 }
   
   /* Styles for Large Screens (1450x832= Macbook Air)*/
@@ -198,11 +196,11 @@
     
     /* Profile Section */
     .profile-section {
-        height: 73vh;
+        height: 74vh;
     }
     
     .profile-image {
-        width: 835px;
+        width: 845px;
         height: 570px;
         margin-top: -40px;
         margin-left: -70px;
