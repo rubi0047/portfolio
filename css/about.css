@@ -56,7 +56,7 @@
     .about-section {
         align-items: center;
         margin-left: 79px;
-        margin-top: 15px;
+        margin-top: 45px;
     }
 
     .about-intro {
@@ -77,13 +77,13 @@
 
     /* Profile Section */
     .profile-2-section {
-        height: 50vh;
+        /* height: 50vh; */
     }
     
     .about-image {
         width: 780px;
         height: auto;
-        margin-top: 180px;
+        margin-top: 5px;
         margin-bottom: 90px;
         margin-left: 40px;
     }

@@ -139,13 +139,14 @@
     
     /* Profile Section */
     .profile-section {
-        height: 80vh; /* Reduced height for less whitespace */
+        /* height: vh;  */
     }
     
     /* Profile Image */
     .profile-image {
         width: 880px;
         height: auto;
+        margin-top: 10px;
         margin-left: -35px;
     }
 }
