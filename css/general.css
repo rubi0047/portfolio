@@ -10,12 +10,12 @@
     --font-h3: 'Quattrocento Sans', sans-serif;
     --font-body: 'Quattrocento Sans', sans-serif;
   
-    /* Font Sizes (based on modern web norms) */
-    --font-size-h1: 2.5rem;  /* ~40px */
-    --font-size-h2: 2rem;    /* ~32px */
-    --font-size-h3: 1.5rem;  /* ~24px */
-    --font-size-body: 1rem;  /* ~16px */
-    --font-size-small: 0.875rem; /* ~14px */
+    /* Font Sizes */
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.5rem;
+    --font-size-body: 1rem;
+    --font-size-small: 0.875rem;
   
     /* Font Weights */
     --font-weight-bold: 700;
@@ -26,90 +26,89 @@
     --spacing-small: 0.5rem;
     --spacing-medium: 1rem;
     --spacing-large: 2rem;
-
+  
     /* Border Radius */
     --border-radius: 8px;
   }
   
-/* Reset */
-* {
+  /* Reset */
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
+  }
+  
+  body {
     background-color: var(--color-primary);
-}
-
-/* Skip Links */
-.visually-hidden-focusable {
+  }
+  
+  /* Skip Links */
+  .visually-hidden-focusable {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 9999;
     padding: 0.5rem 1rem;
-    background-color: var(--color-primary) !important; /* Ensure custom background shows */
+    background-color: var(--color-primary) !important;
     transform: translateY(-100%);
     transition: transform 0.3s ease;
     border-radius: var(--border-radius);
-}
+  }
   
-.visually-hidden-focusable a {
+  .visually-hidden-focusable a {
     display: block;
-    color: var(--color-secondary) !important; /* Force black text */
+    color: var(--color-secondary) !important;
     text-decoration: underline;
     font-weight: var(--font-weight-bold);
-}
+  }
   
-.visually-hidden-focusable a:focus {
-    background-color: var(--color-accent) !important; /* White background on focus */
-    color: var(--color-secondary) !important; /* Keep black text */
+  .visually-hidden-focusable a:focus {
+    background-color: var(--color-accent) !important;
+    color: var(--color-secondary) !important;
     outline: 2px solid var(--color-secondary);
     border-radius: var(--border-radius);
-}
+  }
   
-.visually-hidden-focusable:focus-within {
-    transform: translateY(0); /* Reveal when focused */
-}
-
-/* Navigation Section*/
-/* Top Black Section */
-.nav-top {
+  .visually-hidden-focusable:focus-within {
+    transform: translateY(0);
+  }
+  
+  /* Navigation Section */
+  .nav-top {
     background-color: var(--color-secondary);
-}
-
-.menu-text {
+  }
+  
+  .menu-text {
     font-family: var(--font-h2);
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-regular);
     color: var(--color-accent);
-}
-
-/* Logo Styling */
-.logo-container {
+  }
+  
+  /* Logo Styling */
+  .logo-container {
     position: absolute;
     top: -30px;
     left: 20px;
     background-color: var(--color-primary);
     border-radius: 50%;
     width: 110px;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 100%;
     height: auto;
     border-radius: 50%;
     margin-left: -5px;
-}
-
-/* Navigation Links */
-.nav-bottom {
+  }
+  
+  /* Navigation Links */
+  .nav-bottom {
     background-color: var(--color-primary);
     padding: var(--spacing-large) 0 var(--spacing-medium);
-}
-
-.nav-link {
+  }
+  
+  .nav-link {
     font-family: var(--font-h3);
     font-size: var(--font-size-h3);
     font-weight: var(--font-weight-regular);
@@ -117,36 +116,37 @@ body{
     padding: var(--spacing-small) var(--spacing-medium);
     text-decoration: none;
     margin: 0.2rem 0;
-}
-
-.nav-link:hover, .nav-link:focus {
-    color: var(--color-accent); /* White */
-    text-decoration: none; /* Removes underline */
-}
-
-/* Active Link Styling */
-.nav-link.active {
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  
+  /* Active Link Styling */
+  .nav-link.active {
     font-weight: var(--font-weight-bold);
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: var(--border-radius);
     padding: var(--spacing-small) var(--spacing-medium);
-}
-
-/* Footer Section */
-.site-footer {
+  }
+  
+  /* Footer Section */
+  .site-footer {
     background-color: var(--color-secondary);
     color: var(--color-accent);
     font-family: var(--font-body);
     font-size: var(--font-size-body);
-}
-
-.footer-text {
+  }
+  
+  .footer-text {
     font-weight: var(--font-weight-bold);
-    margin-top: 6px;
-}
-
-/* Circular Icon Backgrounds */
-.icon-circle {
+    margin: 6px 0 0;
+  }
+  
+  /* Circular Icon Backgrounds */
+  .icon-circle {
     background-color: var(--color-primary);
     border-radius: 50%;
     width: 40px;
@@ -154,55 +154,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* SVG Icons */
-.social-icon {
+  }
+  
+  /* SVG Icons */
+  .social-icon {
     width: 38px;
     height: 38px;
-}
-
-/* Media Queries */
-/* Styles for Medium Screens (834x1194= iPad Pro 11") */
-@media (min-width: 833px) {
-    /* Navigation Section */
+  }
+  
+  /* Media Queries */
+  /* Medium Screens (iPad Pro 11") */
+  @media (min-width: 833px) {
     .nav-top {
-        display: none; /* Hide black header */
+      display: none;
     }
-    
-     /* Navigation Links */
-     .nav {
-        flex-direction: row !important;
-        justify-content: flex-end;
-        align-items: center;
-        gap: var(--spacing-large); /* Even spacing between links */
-        margin: 0;
-        gap: var(--spacing-small);
-    }
-    
-    .nav-link {
-        margin: 0;
-    }
-
-    /* Bottom Yellow Section (Logo + Links) */
-    .nav-bottom {
-        flex-direction: row !important;
-        justify-content: space-between;
-        padding: var(--spacing-medium) var(--spacing-large); /* Balanced spacing on desktop */
-    }
-    
-    /* Logo Container */
-    .logo-container {
-        position: static; /* Unset absolute for inline alignment */
-        width: 110px;
-        margin-left: var(--spacing-medium); /* Space between logo and edge */
-    }
-}
-
- /* Styles for Large Screens (1450x832= Macbook Air)*/
-@media (min-width: 1380px) {
-    /* Navigation Links */
+  
     .nav {
-        gap: var(--spacing-medium);
+      flex-direction: row !important;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 0;
+      gap: var(--spacing-small);
     }
-}
+  
+    .nav-link {
+      margin: 0;
+    }
+  
+    .nav-bottom {
+      flex-direction: row !important;
+      justify-content: space-between;
+      padding: var(--spacing-medium) var(--spacing-large);
+    }
+  
+    .logo-container {
+      position: static;
+      width: 110px;
+      margin-left: var(--spacing-medium);
+    }
+  }
+  
+  /* Large Screens (MacBook Air) */
+  @media (min-width: 1380px) {
+    .nav {
+      gap: var(--spacing-medium);
+    }
+  }  
